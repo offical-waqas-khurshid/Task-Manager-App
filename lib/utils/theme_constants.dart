@@ -35,28 +35,28 @@ AppBarTheme _getAppBarTheme() {
 
 TextTheme _getTextTheme() {
   return TextTheme(
-    headline1: GoogleFonts.poppins(
+    displayLarge: GoogleFonts.poppins(
       color: AppColors.codGray,
       fontSize: 40.0,
       fontWeight: FontWeight.w600,
     ),
-    headline5: GoogleFonts.poppins(
+    headlineSmall: GoogleFonts.poppins(
       color: AppColors.codGray,
       fontSize: 18.0,
       height: 0.0,
       fontWeight: FontWeight.w500,
     ),
-    subtitle1: GoogleFonts.poppins(
+    titleMedium: GoogleFonts.poppins(
       color: AppColors.darkGray,
       fontSize: 14.0,
       fontWeight: FontWeight.w400,
     ),
-    button: GoogleFonts.poppins(
+    labelLarge: GoogleFonts.poppins(
       color: AppColors.white,
       fontSize: 14.0,
       fontWeight: FontWeight.w400,
     ),
-    bodyText1: GoogleFonts.poppins(
+    bodyLarge: GoogleFonts.poppins(
       color: AppColors.white,
       fontSize: 16.0,
       fontWeight: FontWeight.w400,

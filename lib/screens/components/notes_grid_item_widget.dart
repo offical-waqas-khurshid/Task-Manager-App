@@ -38,7 +38,7 @@ class NotesGridItem extends StatelessWidget {
                     child: Text(
                       note.title ?? '',
                       maxLines: 4,
-                      style: Theme.of(context).textTheme.headline5!.copyWith(
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
                             fontSize: innerConstraints.maxHeight * 0.115,
                           ),
                     ),
@@ -47,7 +47,7 @@ class NotesGridItem extends StatelessWidget {
                 Text(
                   DateFormat.yMMMd().format(note.time!),
                   maxLines: 1,
-                  style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: innerConstraints.maxHeight * 0.08,
                       ),
                 ),

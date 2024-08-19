@@ -33,7 +33,7 @@ class NotesListItem extends StatelessWidget {
               Text(
                 note.title!,
                 maxLines: 2,
-                style: Theme.of(context).textTheme.headline5!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: size.width * 0.050,
                     ),
               ),
@@ -41,7 +41,7 @@ class NotesListItem extends StatelessWidget {
               Text(
                 DateFormat.yMMMd().format(note.time!),
                 maxLines: 1,
-                style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: size.width * 0.035,
                     ),
               ),

@@ -124,7 +124,7 @@ class _SearchNoteScreenState extends State<SearchNoteScreen> {
       cursorColor: AppColors.orange,
       autofocus: true,
       onChanged: _onChangedText,
-      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
             fontSize: _size.width * 0.04,
           ),
       decoration: InputDecoration(
@@ -148,7 +148,7 @@ class _SearchNoteScreenState extends State<SearchNoteScreen> {
               ),
         contentPadding: const EdgeInsets.symmetric(horizontal: 16.0),
         hintText: 'Search by the keyword...',
-        hintStyle: Theme.of(context).textTheme.subtitle1!.copyWith(
+        hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
               color: AppColors.lightGray,
               fontSize: _size.width * 0.04,
             ),

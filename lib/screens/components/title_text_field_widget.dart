@@ -23,7 +23,7 @@ class TitleTextField extends StatelessWidget {
       maxLines: 2,
       decoration: InputDecoration(
         hintText: 'Title',
-        hintStyle: Theme.of(context).textTheme.headline1!.copyWith(
+        hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
               color: AppColors.lightGray,
               fontSize: _size.width * 0.08,
             ),
@@ -33,7 +33,7 @@ class TitleTextField extends StatelessWidget {
         ),
         border: InputBorder.none,
       ),
-      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
             color: AppColors.white,
             fontSize: _size.width * 0.08,
             fontWeight: FontWeight.w500,

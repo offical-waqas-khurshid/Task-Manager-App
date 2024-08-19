@@ -4,8 +4,6 @@ import 'package:task_manager_app/bloc/notes/notes_bloc.dart';
 import 'package:task_manager_app/bloc/notes/notes_event.dart';
 import 'package:task_manager_app/bloc/search/search_bloc.dart';
 import 'package:task_manager_app/bloc/search/search_event.dart';
-import 'package:task_manager_app/screens/home_screen.dart';
-import 'package:task_manager_app/screens/login_screen.dart';
 import 'package:task_manager_app/screens/signup_screen.dart';
 import 'package:task_manager_app/utils/theme_constants.dart';
 
@@ -25,16 +23,27 @@ void main(List<String> args) {
   );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool _isDarkTheme = false;
+  void toggleTheme() {
+    setState(() {
+      _isDarkTheme = !_isDarkTheme;
+    });
+  }
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: notesTheme,
+      theme: _isDarkTheme ? notesTheme : ThemeData.light(),
       title: 'Task Manager App',
       debugShowCheckedModeBanner: false,
-      home: const SignUpScreen(),
+      home: SignUpScreen(),
     );
   }
 }

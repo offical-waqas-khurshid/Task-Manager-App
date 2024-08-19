@@ -22,7 +22,7 @@ class DescriptionTextField extends StatelessWidget {
       maxLines: null,
       decoration: InputDecoration(
         hintText: 'Type Something...',
-        hintStyle: Theme.of(context).textTheme.headline1!.copyWith(
+        hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
               color: AppColors.lightGray,
               fontSize: _size.width * 0.05,
             ),
@@ -32,7 +32,7 @@ class DescriptionTextField extends StatelessWidget {
         ),
         border: InputBorder.none,
       ),
-      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
             fontSize: _size.width * 0.05,
           ),
     );

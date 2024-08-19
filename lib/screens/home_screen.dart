@@ -28,6 +28,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   late Size _size;
   bool _showGrid = true;
+  bool _isDarkTheme = false;
   late List<Note> _noteList;
   bool _wannaDeleteListItem = false;
 
@@ -51,6 +52,24 @@ class _HomeScreenState extends State<HomeScreen> {
     return AppBar(
       title: const Text('Task Manager App'),
       actions: [
+        IconButton(
+          icon: Icon(
+            _isDarkTheme ? Icons.light_mode : Icons.dark_mode,
+            color: Colors.black,
+          ),
+          onPressed: () {
+            setState(() {
+              _isDarkTheme = !_isDarkTheme; // Toggle the theme
+              if (_isDarkTheme) {
+                // Apply dark theme
+                ThemeData.dark();
+              } else {
+                // Apply light theme
+                ThemeData.light();
+              }
+            });
+          },
+        ),
         buildActionIcon(
           iconPath: AssetsConsts.icDustbin,
           onTap: () async {
@@ -112,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       child: Text(
                         'All Notes',
-                        style: Theme.of(context).textTheme.headline5!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               color: AppColors.lightGray,
                             ),
                       ),
