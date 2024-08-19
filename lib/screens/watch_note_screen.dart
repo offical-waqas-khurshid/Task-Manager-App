@@ -111,7 +111,7 @@ class _WatchNoteScreenState extends State<WatchNoteScreen> {
         maxLines: null,
         textAlign: TextAlign.start,
         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-              color: AppColors.white,
+              color: Colors.black,
               fontSize: _size.width * 0.08,
               fontWeight: FontWeight.w500,
             ),

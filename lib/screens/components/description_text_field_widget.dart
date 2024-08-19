@@ -23,7 +23,7 @@ class DescriptionTextField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: 'Type Something...',
         hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
-              color: AppColors.lightGray,
+              color: Colors.black,
               fontSize: _size.width * 0.05,
             ),
         contentPadding: EdgeInsets.symmetric(

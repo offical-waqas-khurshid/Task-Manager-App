@@ -18,7 +18,7 @@ Widget buildActionIcon({
     ),
     clipBehavior: Clip.hardEdge,
     decoration: BoxDecoration(
-      color: AppColors.darkGray,
+      color: AppColors.lightGreen,
       borderRadius: BorderRadius.circular(12),
     ),
     alignment: Alignment.center,

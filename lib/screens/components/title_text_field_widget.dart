@@ -24,7 +24,7 @@ class TitleTextField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: 'Title',
         hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
-              color: AppColors.lightGray,
+              color: Colors.black,
               fontSize: _size.width * 0.08,
             ),
         contentPadding: EdgeInsets.symmetric(
@@ -34,7 +34,7 @@ class TitleTextField extends StatelessWidget {
         border: InputBorder.none,
       ),
       style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-            color: AppColors.white,
+            color: Colors.black,
             fontSize: _size.width * 0.08,
             fontWeight: FontWeight.w500,
           ),
