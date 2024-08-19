@@ -8,11 +8,11 @@ Future<bool> showDeleteAllNotesDialog(BuildContext context) async {
     context: context,
     builder: (context) {
       return AlertDialog(
-        title:  Text('Delete', style: notesTheme.textTheme.titleSmall?.copyWith(color: Colors.white)),
+        title:  Text('Delete', style: notesTheme.textTheme.titleSmall?.copyWith(color: Colors.black)),
         content: const Text(
           'Do you really want to delete all the notes?',
           style: TextStyle(
-            color: AppColors.white,
+            color: Colors.white,
           ),
         ),
         actions: [

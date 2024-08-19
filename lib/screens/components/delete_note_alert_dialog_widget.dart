@@ -11,7 +11,7 @@ Future<bool> showDeleteNoteDialog(BuildContext context) async {
         content: const Text(
           'Do you really want to delete the note?',
           style: TextStyle(
-            color: AppColors.white,
+            color: Colors.black,
           ),
         ),
         actions: [
